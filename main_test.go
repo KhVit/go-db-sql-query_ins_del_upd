@@ -9,7 +9,7 @@ import (
 
 func TestInsertUpdateDelete(t *testing.T) {
 	// prepare
-	db, err := sql.Open("sqlite", "demo.db")
+	db, err := sql.Open("sqlite", "/Users/yong3rz/go/projects/ya_practicum/M3_SQL_DB/go-db-sql-query_ins_del_upd/demo.db")
 	require.NoError(t, err)
 	defer db.Close()
 
